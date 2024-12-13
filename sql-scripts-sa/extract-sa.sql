@@ -1,8 +1,11 @@
--- Crear StageArea (SA)
+-- 1.1 Crear StageArea (SA)
 CREATE DATABASE LubricentroSA;
 USE LubricentroSA;
 
--- Extraer las tablas de la base de datos TX al SA
+-- 1.2 Crear Schema
+CREATE SCHEMA ext;
+
+-- 1.3 Extraer las tablas de la base de datos TX al SA
 SELECT * INTO LubricentroSA.ext.clientes
 FROM LubricentroTX.dbo.clientes;
 

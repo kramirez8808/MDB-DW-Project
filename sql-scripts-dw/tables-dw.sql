@@ -23,6 +23,7 @@ CREATE TABLE LubricentroDW.dbo.empleados_d (
     empleadoNombre NVARCHAR(50) NOT NULL,
     empleadoApellido NVARCHAR(50) NOT NULL,
     cargoNombre NVARCHAR(50) NOT NULL
+    salario DECIMAL(10,2) NOT NULL
 );
 
 -- Dimensión Tipo de Servicios
